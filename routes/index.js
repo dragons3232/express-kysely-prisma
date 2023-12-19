@@ -10,8 +10,9 @@ router.get('/', function(req, res, next) {
 router.get('/test', async function (req, res, next) {
   const record = await db.insertInto('SmsCode')
     .values({
-      phone: '123456789',
+      phone: '123456789' + Math.floor(Math.random()*100),
       code: '1234',
+      expiredAt: new Date(),
     })
     .executeTakeFirst();
 
