@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@prisma/client": "5.5.2",
     "@types/pg": "^8.10.9",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -16,5 +17,8 @@
     "morgan": "~1.9.1",
     "pg": "^8.11.3",
     "prisma-kysely": "^1.7.1"
+  },
+  "devDependencies": {
+    "prisma": "5.5.2"
   }
 }
